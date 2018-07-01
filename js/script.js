@@ -15,3 +15,14 @@ function pingPong(number){
 
 
 //USER LOGIC
+$(document).ready(
+  function(){
+    $("#play").submit(
+      function(event){
+        event.preventDefault()
+        var userInput = $("#ping").val()
+
+      }
+    )
+  }
+)
