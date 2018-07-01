@@ -1,3 +1,6 @@
 #play button{
   float:inherit;
 }
+.display{
+  display: none;
+}

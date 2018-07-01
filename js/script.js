@@ -21,6 +21,9 @@ $(document).ready(
       function(event){
         event.preventDefault()
         var userInput = $("#ping").val()
+        var result = pingPong(userInput)
+
+        
 
       }
     )
