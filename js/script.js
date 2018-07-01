@@ -4,7 +4,6 @@ function pingPong(number){
   //Numbers divisible by 3 are replaced with "ping"; Numbers divisible by 5 are replaced with "pong";
   //Numbers divisible by 15 are replaced with "pingpong"
   var answer
-  var gameArray = []
   var newArray = []
   for(var i = 1; i<=number; i++){
     if((i%3 === 0) && (i%5 === 0)){
@@ -40,12 +39,12 @@ $(document).ready(
           }
           else{
             $("#numbers-list").append("<li>"+res+"</li>")
-            // console.log(res)
           }
         })
-        // $("#numbers-list").html(result)
         $(".display").show()
         $("#ping").val("")
+
+        $("#ping") = $("")
 
       }
     )
