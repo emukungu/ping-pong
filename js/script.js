@@ -6,8 +6,14 @@ function pingPong(number){
   var answer
   var newArray = []
   for(var i = 1; i<=number; i++){
+    if(i%3 === 0){
+      answer = "ping"
+    }
+    else{
+      answer = i
+    }
 
-    newArray.push(i)
+    newArray.push(answer)
   }
   return newArray
 }
