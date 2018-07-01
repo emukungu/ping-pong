@@ -44,8 +44,6 @@ $(document).ready(
         $(".display").show()
         $("#ping").val("")
         $("#numbers-list").text(result)
-
-
       }
     )
   }
