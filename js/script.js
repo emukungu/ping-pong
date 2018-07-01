@@ -43,15 +43,7 @@ $(document).ready(
         })
         $(".display").show()
         $("#ping").val("")
-
-
-        if(("#ping").text(userInput) === true){$("#numbers-list").text("")}
-        // var clear = setTimeOut(function(){
-        //   $("#numbers-list").text("")
-        //   $(".display").hide()
-        // },2000)
-        // // $("#ping").text(userInput)
-
+        $("#numbers-list").text(result)
 
 
       }
