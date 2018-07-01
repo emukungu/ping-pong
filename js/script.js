@@ -21,8 +21,12 @@ function pingPong(number){
     newArray.push(answer)
     var gameArray = newArray.join(",  ")
   }
-  
-  return spacedArray
+  gameArray.forEach(function(gameNo){
+    if((gameNo === "PING")||(gameNo === "PONG")||(gameNo === "PING-PONG")){
+      gameNo.addClass("bg-success")
+    }
+  })
+  return gameArray
 }
 
 
