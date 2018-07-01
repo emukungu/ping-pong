@@ -44,7 +44,14 @@ $(document).ready(
         $(".display").show()
         $("#ping").val("")
 
-        $("#ping") = $("")
+        //  if(("#ping").text(userInput) === true){}
+        // var clear = setTimeOut(function(){
+        //   $("#numbers-list").text("")
+        //   $(".display").hide()
+        // },2000)
+        // // $("#ping").text(userInput)
+
+
 
       }
     )
