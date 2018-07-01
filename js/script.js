@@ -9,6 +9,9 @@ function pingPong(number){
     if(i%3 === 0){
       answer = "ping"
     }
+    else if (i%5 === 0) {
+      answer = "pong"
+    }
     else{
       answer = i
     }
