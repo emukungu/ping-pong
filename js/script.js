@@ -18,14 +18,12 @@ function pingPong(number){
     else{
       answer = i
     }
-
     newArray.push(answer)
-
+    var gameArray = newArray.join(",  ")
   }
-  return newArray
+  
+  return spacedArray
 }
-
-
 
 
 
