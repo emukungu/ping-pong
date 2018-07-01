@@ -4,3 +4,12 @@
 .display{
   display: none;
 }
+.none{
+  background-color: inherit;
+}
+.bg-success{
+  background-color: green;
+}
+mark{
+  background-color: lightgreen;
+}

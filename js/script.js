@@ -21,13 +21,7 @@ function pingPong(number){
     }
     newArray.push(answer)
   }
-  newArray.forEach(function(gameNo){
-    if((gameNo === "PING")||(gameNo === "PONG")||(gameNo === "PING-PONG")){
-      gameNo.addClass("bg-success")
-    }
-  })
-  gameArray = newArray.join(",  ")
-  return gameArray
+  return newArray
 }
 
 
@@ -39,9 +33,17 @@ $(document).ready(
       function(event){
         event.preventDefault()
         var userInput = $("#ping").val()
-        var result = pingPong(userInput)
-
-        $("#numbers-list").append("<li>"+result+"</li>")
+        var result = pingPong(userInput) // array
+        result.forEach(function(res){
+          if((res ==="PING")||(res ==="PONG")||(res ==="PING-PONG")){
+            $("#numbers-list").append("<li><mark>"+res+"</mark></li>")
+          }
+          else{
+            $("#numbers-list").append("<li>"+res+"</li>")
+            // console.log(res)
+          }
+        })
+        // $("#numbers-list").html(result)
         $(".display").show()
         $("#ping").val("")
 
