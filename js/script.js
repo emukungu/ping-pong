@@ -4,6 +4,7 @@ function pingPong(number){
   //Numbers divisible by 3 are replaced with "ping"; Numbers divisible by 5 are replaced with "pong";
   //Numbers divisible by 15 are replaced with "pingpong"
   var answer
+  var gameArray = []
   var newArray = []
   for(var i = 1; i<=number; i++){
     if((i%3 === 0) && (i%5 === 0)){
@@ -19,13 +20,13 @@ function pingPong(number){
       answer = i
     }
     newArray.push(answer)
-    var gameArray = newArray.join(",  ")
   }
-  gameArray.forEach(function(gameNo){
+  newArray.forEach(function(gameNo){
     if((gameNo === "PING")||(gameNo === "PONG")||(gameNo === "PING-PONG")){
       gameNo.addClass("bg-success")
     }
   })
+  gameArray = newArray.join(",  ")
   return gameArray
 }
 
