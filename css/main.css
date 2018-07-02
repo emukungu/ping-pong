@@ -12,7 +12,22 @@
 }
 #card h1{
   color: crimson;
+
 }
 mark{
   background-color: lightgreen;
+}
+.bg-img{
+  background-image: url("../img/ping-pong2.png"),url("../img/ping-pong2.png");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left, right;
+}
+body{
+  background-color: #C70039; 
+  /* background-image: url("../img/bg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: left; */
 }
