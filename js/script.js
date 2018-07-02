@@ -26,13 +26,15 @@ function pingPong(number){
 
 
 //USER LOGIC
+
 $(document).ready(
   function(){
-    $("#play").submit(
+      $("#play").submit(
       function(event){
         event.preventDefault()
         var userInput = $("#ping").val()
         var result = pingPong(userInput) // array
+
         result.forEach(function(res){
           if((res ==="PING")||(res ==="PONG")||(res ==="PING-PONG")){
             $("#numbers-list").append("<li><mark>"+res+"</mark></li>")
@@ -41,9 +43,11 @@ $(document).ready(
             $("#numbers-list").append("<li>"+res+"</li>")
           }
         })
+
         $(".display").show()
         $("#ping").val("")
         $("#numbers-list").text(result)
+        // $("#card").flip()
       }
     )
   }
