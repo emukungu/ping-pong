@@ -37,16 +37,16 @@ $(document).ready(
 
         result.forEach(function(res){
           if((res ==="PING")||(res ==="PONG")||(res ==="PING-PONG")){
-            $("#numbers-list").append("<li><mark>"+res+"</mark></li>")
+            $("#numbersList").append("<li><mark>"+res+"</mark></li>")
           }
           else{
-            $("#numbers-list").append("<li>"+res+"</li>")
+            $("#numbersList").append("<li>"+res+"</li>")
           }
         })
 
         $(".display").show()
         $("#ping").val("")
-        $("#numbers-list").text(result)
+        $("#numbersList").text(result)
         // $("#card").flip()
       }
     )
