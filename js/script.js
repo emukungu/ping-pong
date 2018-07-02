@@ -29,25 +29,26 @@ function pingPong(number){
 
 $(document).ready(
   function(){
-      $("#play").submit(
-      function(event){
-        event.preventDefault()
-        var userInput = $("#ping").val()
-        var result = pingPong(userInput) // array
+    $("#play").submit(
+    function(event){
+      event.preventDefault()
+      var userInput = $("#ping").val()
+      var result = pingPong(userInput) // array
 
-        result.forEach(function(res){
-          if((res ==="PING")||(res ==="PONG")||(res ==="PING-PONG")){
-            $("#numbersList").append("<li><mark>"+res+"</mark></li>")
-          }
-          else{
-            $("#numbersList").append("<li>"+res+"</li>")
-          }
-        })
+      result.forEach(function(res){
+        if((res ==="PING")||(res ==="PONG")||(res ==="PING-PONG")){
+          $("#numbersList").append("<li><mark>"+res+"</mark></li>")
+        }
+        else{
+          $("#numbersList").append("<li>"+res+"</li>")
+        }
 
-        $(".display").show()
-        $("#ping").val("")
-        $("#numbersList").text(result)
-        // $("#card").flip()
+      })
+
+      $(".display").show()
+      $("#ping").val("")
+      $("#numbersList").text(result)
+
       }
     )
   }
