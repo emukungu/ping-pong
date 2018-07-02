@@ -7,9 +7,12 @@
 .none{
   background-color: inherit;
 }
-/* .bg-success{
-  background-color: green;
-} */
+.text-success{
+  color: darkgreen;
+}
+#card h1{
+  color: crimson;
+}
 mark{
   background-color: lightgreen;
 }
